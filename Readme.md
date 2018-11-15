@@ -1,3 +1,14 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [CustomDataControlDragElement.cs](./CS/Drag Drop rows/CustomDataControlDragElement.cs) (VB: [CustomDataControlDragElement.vb](./VB/Drag Drop rows/CustomDataControlDragElement.vb))
+* [CustomGridDragDropManager.cs](./CS/Drag Drop rows/CustomGridDragDropManager.cs) (VB: [CustomGridDragDropManager.vb](./VB/Drag Drop rows/CustomGridDragDropManager.vb))
+* [CustomTreeListDragDropManager.cs](./CS/Drag Drop rows/CustomTreeListDragDropManager.cs) (VB: [CustomTreeListDragDropManager.vb](./VB/Drag Drop rows/CustomTreeListDragDropManager.vb))
+* [ExternalDragDropViewInfo.cs](./CS/Drag Drop rows/ExternalDragDropViewInfo.cs) (VB: [ExternalDragDropViewInfo.vb](./VB/Drag Drop rows/ExternalDragDropViewInfo.vb))
+* [IDragRowVisibilitySupport.cs](./CS/Drag Drop rows/IDragRowVisibilitySupport.cs) (VB: [IDragRowVisibilitySupport.vb](./VB/Drag Drop rows/IDragRowVisibilitySupport.vb))
+* [MainWindow.xaml](./CS/Drag Drop rows/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/Drag Drop rows/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/Drag Drop rows/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/Drag Drop rows/MainWindow.xaml))
+<!-- default file list end -->
 # Drag & Drop in TreeList and GridControl - How to show dragged rows as a cursor
 
 
