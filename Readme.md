@@ -7,7 +7,7 @@
 * [ExternalDragDropViewInfo.cs](./CS/Drag Drop rows/ExternalDragDropViewInfo.cs) (VB: [ExternalDragDropViewInfo.vb](./VB/Drag Drop rows/ExternalDragDropViewInfo.vb))
 * [IDragRowVisibilitySupport.cs](./CS/Drag Drop rows/IDragRowVisibilitySupport.cs) (VB: [IDragRowVisibilitySupport.vb](./VB/Drag Drop rows/IDragRowVisibilitySupport.vb))
 * [MainWindow.xaml](./CS/Drag Drop rows/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/Drag Drop rows/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/Drag Drop rows/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/Drag Drop rows/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/Drag Drop rows/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/Drag Drop rows/MainWindow.xaml.vb))
 <!-- default file list end -->
 # Drag & Drop in TreeList and GridControl - How to show dragged rows as a cursor
 
