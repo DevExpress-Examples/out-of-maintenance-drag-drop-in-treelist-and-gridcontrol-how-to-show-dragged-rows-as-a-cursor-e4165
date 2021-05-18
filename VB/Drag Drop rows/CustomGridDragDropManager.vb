@@ -18,31 +18,31 @@ Imports System.Windows.Input
 Imports DevExpress.Xpf.Grid
 
 Namespace Drag_Drop_rows
-    Public Class CustomGridDragDropManager
-        Inherits GridDragDropManager
-        Implements IDragRowVisibilitySupport
+	Public Class CustomGridDragDropManager
+		Inherits GridDragDropManager
+		Implements IDragRowVisibilitySupport
 
-        Public Property DraggingRowsData() As List(Of Object) Implements IDragRowVisibilitySupport.DraggingRowsData
-        Public ReadOnly Property TableView() As TableView
-            Get
-                Return TryCast(View, TableView)
-            End Get
-        End Property
-        Protected Overrides Function CreateDragElement(ByVal offset As Point, ByVal owner As FrameworkElement) As DevExpress.Xpf.Core.IDragElement
-            Return New CustomDataControlDragElement(Me, offset, owner)
-        End Function
+		Public Property DraggingRowsData() As List(Of Object) Implements IDragRowVisibilitySupport.DraggingRowsData
+		Public ReadOnly Property TableView() As TableView
+			Get
+				Return TryCast(View, TableView)
+			End Get
+		End Property
+		Protected Overrides Function CreateDragElement(ByVal offset As Point, ByVal owner As FrameworkElement) As DevExpress.Xpf.Core.IDragElement
+			Return New CustomDataControlDragElement(Me, offset, owner)
+		End Function
 
-        Public Sub SetDraggingRowsData()
-            Dim list As New List(Of Object)()
-            For Each rowHandle As Integer In TableView.GetSelectedRowHandles()
-                list.Add((TryCast(TableView.GetRowElementByRowHandle(rowHandle), GridRow)).RowDataContent.DataContext)
-            Next rowHandle
-            DraggingRowsData = list
-        End Sub
+		Public Sub SetDraggingRowsData()
+			Dim list As New List(Of Object)()
+			For Each rowHandle As Integer In TableView.DataControl.GetSelectedRowHandles()
+				list.Add((TryCast(TableView.GetRowElementByRowHandle(rowHandle), GridRow)).RowDataContent.DataContext)
+			Next rowHandle
+			DraggingRowsData = list
+		End Sub
 
-        Protected Overrides Function CalcDraggingRows(ByVal e As DevExpress.Xpf.Core.IndependentMouseEventArgs) As System.Collections.IList
-            SetDraggingRowsData()
-            Return MyBase.CalcDraggingRows(e)
-        End Function
-    End Class
+		Protected Overrides Function CalcDraggingRows(ByVal e As DevExpress.Xpf.Core.IndependentMouseEventArgs) As System.Collections.IList
+			SetDraggingRowsData()
+			Return MyBase.CalcDraggingRows(e)
+		End Function
+	End Class
 End Namespace
