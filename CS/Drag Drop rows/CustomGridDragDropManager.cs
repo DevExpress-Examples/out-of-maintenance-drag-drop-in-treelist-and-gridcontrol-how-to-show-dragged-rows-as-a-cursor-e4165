@@ -32,7 +32,7 @@ namespace Drag_Drop_rows
         public void SetDraggingRowsData()
         {
             List<object> list = new List<object>();
-            foreach (int rowHandle in TableView.GetSelectedRowHandles())
+            foreach (int rowHandle in TableView.DataControl.GetSelectedRowHandles())
             {
                 list.Add((TableView.GetRowElementByRowHandle(rowHandle) as GridRow).RowDataContent.DataContext);
             }

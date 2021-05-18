@@ -33,7 +33,7 @@ namespace Drag_Drop_rows
         {
             List<object> list = new List<object>();
             TreeListView view = View as TreeListView;
-            foreach (int rowHandle in view.GetSelectedRowHandles())
+            foreach (int rowHandle in view.DataControl.GetSelectedRowHandles())
             {
                 list.Add((view.GetRowElementByRowHandle(rowHandle) as GridRow).RowDataContent.DataContext);
             }
