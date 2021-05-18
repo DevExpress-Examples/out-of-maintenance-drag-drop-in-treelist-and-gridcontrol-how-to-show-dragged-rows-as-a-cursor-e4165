@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drag Drop rows", "Drag Drop rows\Drag Drop rows.csproj", "{0424EEF5-BF5F-4BEC-BEF3-2CA570A10F94}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drag Drop rows", "DragDropRows\Drag Drop rows.csproj", "{0424EEF5-BF5F-4BEC-BEF3-2CA570A10F94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
