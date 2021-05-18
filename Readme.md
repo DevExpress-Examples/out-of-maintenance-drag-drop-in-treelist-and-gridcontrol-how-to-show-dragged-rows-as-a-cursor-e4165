@@ -11,9 +11,6 @@
 <!-- default file list end -->
 # Drag & Drop in TreeList and GridControl - How to show dragged rows as a cursor
 
+The GridControl allows you to drag records and drop them in external controls. This example shows how to display dragged row as a cursor. Override the corresponding DragDropManager class and pass RowData to DragElement. Change the drag element's template to draw rows in the same way as they are drawn in Grid.
 
-<p>This example shows how to customize drag&drop in Grid and TreeList controls, so that a dragged row is shown as a cursor. To do so, you need to override the corresponding DragDropManager class to pass RowData to DragElement instead of the row content and change its template to draw rows in the same way as they are drawn in Grid.</p>
-
-<br/>
-
-
+Refer to the [Drag-and-Drop Between GridControls](https://docs.devexpress.com/WPF/119267/controls-and-libraries/data-grid/drag-and-drop/process-drag-and-drop/drag-and-drop-between-gridcontrols) topic for more information.
