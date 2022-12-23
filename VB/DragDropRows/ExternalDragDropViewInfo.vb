@@ -10,15 +10,15 @@ Namespace Drag_Drop_rows
     Public Class ExternalDragDropViewInfo
         Inherits DragDropViewInfo
 
-        Overloads Public Shared ReadOnly DraggingRowsProperty As DependencyProperty
+        Public Shared Shadows ReadOnly DraggingRowsProperty As DependencyProperty
 
-        Overloads Public Shared ReadOnly DropTargetRowProperty As DependencyProperty
+        Public Shared Shadows ReadOnly DropTargetRowProperty As DependencyProperty
 
-        Overloads Public Shared ReadOnly DropTargetTypeProperty As DependencyProperty
+        Public Shared Shadows ReadOnly DropTargetTypeProperty As DependencyProperty
 
-        Overloads Public Shared ReadOnly FirstDraggingObjectProperty As DependencyProperty
+        Public Shared Shadows ReadOnly FirstDraggingObjectProperty As DependencyProperty
 
-        Overloads Public Shared ReadOnly GroupInfoProperty As DependencyProperty
+        Public Shared Shadows ReadOnly GroupInfoProperty As DependencyProperty
 
         Shared Sub New()
             Dim ownerType As Type = GetType(ExternalDragDropViewInfo)
